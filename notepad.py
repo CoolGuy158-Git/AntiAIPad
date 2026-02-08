@@ -17,7 +17,7 @@ def block_paste(event):
 settings = {
     "font": "Arial",
     "bg": "white",
-    "fg": "green"
+    "fg": "black"
 }
 if os.path.exists("settings.json"):
     with open("settings.json","r") as f:
@@ -196,3 +196,4 @@ def on_closing():
 
 win.protocol("WM_DELETE_WINDOW", on_closing)
 win.mainloop()
+
